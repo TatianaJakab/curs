@@ -23,7 +23,8 @@
         console.log(error);
       }
 
-      navigator.geolocation.getCurrentPosition(onSuccess, onError);
+      // navigator.geolocation.getCurrentPosition(onSuccess, onError);
+      navigator.geolocation.watchPosition(onSuccess, onError);
     </script>
   </body>
 </html>
